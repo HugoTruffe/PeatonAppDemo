@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:PeatonAppDemo"
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+	x:Class="PeatonAppDemo.ModalPage">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     BackgroundColor="White">
+
+
+			<StackLayout
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="FillAndExpand"
+				BackgroundColor="White"
+
+				Padding="20,30"
+				Orientation="Vertical">
+
+
+				<local:CustomEntry Placeholder="Entry Con Custom" PlaceholderColor="Green" TextColor="Green" Margin="5,5,5,5" 
+								   BorderColor="Green" BorderWidth="2,2,2,2" HeightRequest="40" WidthRequest="320"/>
+
+				<DatePicker TextColor="Blue"></DatePicker>
+
+				<Picker Title="Colores" TextColor="Blue" x:Name="ProviciasPicker"></Picker>
+
+				<SearchBar Text="" BackgroundColor="Silver" TextColor="White" Placeholder="¿Que buscas?" PlaceholderColor="Gray"></SearchBar>
+
+				<StackLayout
+					Orientation="Horizontal"
+					HorizontalOptions="Start"
+					VerticalOptions="Center"
+					Padding="5,0,0,0">
+
+					<Image Source="redes1" WidthRequest="40" HeightRequest="40" HorizontalOptions="Center"></Image>
+
+					<local:CustomEntry Placeholder="Entry Con Custom" PlaceholderColor="Green" TextColor="Green" Margin="5,5,5,5" WidthRequest="270"
+								   BorderColor="Green" BorderWidth="2,2,2,2" HeightRequest="40" HorizontalOptions="FillAndExpand"/>
+				</StackLayout>
+
+				<StackLayout
+					Orientation="Horizontal"
+					HorizontalOptions="Start"
+					VerticalOptions="Center"
+					Padding="5,0,0,0">
+
+						<Image Source="redes2" WidthRequest="40" HeightRequest="40" HorizontalOptions="Center"></Image>
+
+						<local:CustomEntry Placeholder="Entry Con Custom" PlaceholderColor="Green" TextColor="Green" Margin="5,5,5,5"   WidthRequest="270"
+									   BorderColor="Green" BorderWidth="2,2,2,2" HeightRequest="40" HorizontalOptions="FillAndExpand"/>
+				</StackLayout>
+			
+
+				<StackLayout
+					Orientation="Horizontal"
+					HorizontalOptions="Start"
+					VerticalOptions="Center"
+					Padding="5,0,0,0">
+
+					<Image Source="redes3" WidthRequest="40" HeightRequest="40" HorizontalOptions="Center"></Image>
+
+					<local:CustomEntry Placeholder="Entry Con Custom" PlaceholderColor="Green" TextColor="Green" Margin="5,5,5,5"  WidthRequest="270"
+								   BorderColor="Green" BorderWidth="2,2,2,2" HeightRequest="40" HorizontalOptions="FillAndExpand"/>
+				</StackLayout>
+
+				<StackLayout
+					Orientation="Horizontal"
+					HorizontalOptions="Start"
+					VerticalOptions="Center"
+					Padding="5,0,0,0">
+
+					<Image Source="redes4" WidthRequest="40" HeightRequest="40" HorizontalOptions="Center"></Image>
+
+					<local:CustomEntry Placeholder="Entry Con Custom" PlaceholderColor="Green" TextColor="Green" Margin="5,5,5,5"  WidthRequest="270"
+								   BorderColor="Green" BorderWidth="2,2,2,2" HeightRequest="40" HorizontalOptions="FillAndExpand"/>
+				</StackLayout>
+			</StackLayout>
+
+			<Button Text="Back" TextColor="White" x:Name="BackButton" BackgroundColor="Navy"></Button>
+
+			
+		</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

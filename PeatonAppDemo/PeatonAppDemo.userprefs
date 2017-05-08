@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{930B25B7-43CC-45E3-BB09-805113F02F79}|Default">
+  <MonoDevelop.Ide.ItemProperties.PeatonAppDemo.Droid PreferredExecutionTarget="Android.FTDJA16415041405" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/hugo/Projects/PeatonAppDemo/PeatonAppDemo/View/ModalPage.xaml" relfile="PeatonAppDemo/View/ModalPage.xaml" line="14" column="16" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PeatonAppDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.78BAB6DC-BB33-4B14-93A5-7F855819AD98" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:PeatonAppDemo" 
+	x:Class="PeatonAppDemo.PeatonAppDemoPage"
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+	BackgroundImage="background1">
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Modal" x:Name="Modal"></ToolbarItem>
+	</ContentPage.ToolbarItems>
+	
+	<StackLayout
+		BackgroundColor="Transparent">
+
+		<Label Text="PERFIL" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,50,0,0" />
+		
+		<StackLayout
+			HorizontalOptions="FillAndExpand"
+			VerticalOptions="Start"
+			BackgroundColor="White"
+			Margin="60,20,60,80 "
+			Padding="10,10"
+			Orientation="Vertical">
+
+			<Entry Placeholder="Entry sin Custom" PlaceholderColor="Gray" TextColor="Black" Margin="5,5,5,0" />
+			<BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="1" HorizontalOptions="FillAndExpand" Margin="5,0,5,0"/>
+
+			<local:CustomEntry Placeholder="Entry con Custom" PlaceholderColor="Gray" TextColor="Gray" Margin="5,5,5,5" 
+							   BorderColor="Gray" BorderWidth="0,0,0,2" HeightRequest="40" />
+
+			
+
+
+			<StackLayout
+				Orientation="Horizontal"
+				Padding="5,5,5,0"
+				VerticalOptions="Center">
+
+				<controls:CircleImage Source="bank_santandert" Aspect="AspectFill" BorderColor="Fuchsia" BorderThickness="2">
+				  <controls:CircleImage.WidthRequest>
+				    <OnPlatform x:TypeArguments="x:Double"
+				      iOS="40"
+				      Android="40"
+				      WinPhone="75"/>
+				   </controls:CircleImage.WidthRequest>
+				<controls:CircleImage.HeightRequest>
+				    <OnPlatform x:TypeArguments="x:Double"
+				      iOS="40"
+				      Android="40"
+				      WinPhone="75"/>
+				   </controls:CircleImage.HeightRequest>
+				</controls:CircleImage>
+
+				<Label Text="Banco Nacion" TextColor="Gray" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Image Source="check_false" WidthRequest="10" HeightRequest="10" HorizontalOptions="Center"></Image>
+			</StackLayout>
+
+			<StackLayout
+				Orientation="Horizontal"
+				Padding="5,5,5,0"
+				VerticalOptions="Center">
+
+				<controls:CircleImage Source="bank_credicop" Aspect="AspectFill" BorderColor="Fuchsia" BorderThickness="2">
+				  <controls:CircleImage.WidthRequest>
+				    <OnPlatform x:TypeArguments="x:Double"
+				      iOS="40"
+				      Android="40"
+				      WinPhone="75"/>
+				   </controls:CircleImage.WidthRequest>
+				<controls:CircleImage.HeightRequest>
+				    <OnPlatform x:TypeArguments="x:Double"
+				      iOS="40"
+				      Android="40"
+				      WinPhone="75"/>
+				   </controls:CircleImage.HeightRequest>
+				</controls:CircleImage>
+
+				<Label Text="Banco Credicop" TextColor="Gray" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Image Source="check_true" WidthRequest="10" HeightRequest="10" HorizontalOptions="Center"></Image>
+			</StackLayout>
+
+			<StackLayout
+				Orientation="Horizontal"
+				Padding="35,5,5,0"
+				VerticalOptions="Center">
+
+				<Label Text="Comprar" TextColor="Gray" FontAttributes="Italic" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Image Source="rd_false" WidthRequest="10" HeightRequest="10" HorizontalOptions="Center"></Image>
+			</StackLayout>
+
+			<StackLayout
+				Orientation="Horizontal"
+				Padding="35,5,5,0"
+				VerticalOptions="Center">
+
+				<Label Text="Vender" TextColor="Gray" FontAttributes="Italic" HorizontalOptions="Start" VerticalOptions="Center" />
+				<Image Source="rd_true" WidthRequest="10" HeightRequest="10" HorizontalOptions="Center"></Image>
+			</StackLayout>
+			
+			
+		</StackLayout>
+
+		<StackLayout
+			BackgroundColor="Transparent"
+			Orientation="Horizontal"
+			HorizontalOptions="CenterAndExpand"
+			Margin="40,0,40,20">
+			<Button Text="Next Page" TextColor="Blue" BackgroundColor="White" BorderRadius="20" WidthRequest="200" HeightRequest="40" x:Name="NextButton"></Button>
+
+		</StackLayout>
+
+	</StackLayout>
+
+</ContentPage>
